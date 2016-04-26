@@ -1,5 +1,5 @@
 #  NsBm0d 
-A Cydia repository template. This template contains sample on how you can easily make depiction pages without replicating your html pages. The pages are styled using [Bootsrap](http://getbootstrap.com/) which is really easy to use. You can see how it looks like by visiting [this sample repo]https://github.com/Nrepo/Nrepo.github.io on your desktop or mobile phone.
+A Cydia repository template. This template contains samples on how you can easily make depiction pages without replicating your html pages. The pages are styled using [Bootsrap](http://getbootstrap.com/) which is really easy to use. You can see how it looks like by visiting [this sample repo]https://github.com/Nrepo/Nrepo.github.io on your desktop or mobile phone.
 
 Most data for this repo is stored on XML files and are loaded on the depiction page dynamically. See the guide below on how to set it up. Note that this guide doesn't cover creating .deb files but will briefly cover assiging depictions.
 
@@ -95,16 +95,53 @@ Depiction:
 https://username.github.io/depictions/?p=com.Nrepo.Nicon
 ```
 #### 4. Almost there
-Compress your Packages file to bzip2 and there you have it! In case you haven't done yet, add your repo `https://username.github.io` to cydia. One final touch is to update `index.html`. Look at line 18 and 19. Change line 18 into your own **brand** and line 19 to have your own URL. Line2 27-44 contains the list of packages. You can edit those too.
+Compress your Packages file to bzip2 and there you have it! In case you haven't done yet, add your repo `https://username.github.io` to cydia. One final touch is to update `index.html`. Look at line 18 and 19. Change line 18 into your own **brand** and line 19 to have your own URL, and line 20 to have your YouTube footage.  Line 30 is your Youtube Channel name, and line 34 add your YouTube link.  The lines 42-60 contains the list of packages, you can edit those too. To add more packages just duplicate the previous package then add it under the last package and edit it.
 ```html
 16 <div class="container">
 17 	<div class="well">
 18 		<p><span class="text-primary"><b> NsBm0d </span></b> is a Cydia repository template.</p>
-19 		<a class="btn btn-sm btn-default" href="cydia://url/cydia://url/https://cydia.saurik.com/api/share#?source=https://Nrepo.github.io//
-">Add to Cydia</a>
-20 	</div>
-21 </div>
+19 		<a class="btn btn-sm btn-default" href="cydia://url/cydia://url/https://cydia.saurik.com/api/share#?source=https://Nrepo.github.io//">Add to Cydia</a>
+20		<a class="btn btn-sm btn-default" href="https://youtu.be/4goGcf1cVrQ">How to Add to Cydia</a>
+21 	</div>
+22 </div>
 ```
+
+24 <div class="container">
+25   <h3 id="wells" class="page-header">My YouTube Channel</h3>
+26 </div>
+27
+28 <div class="container">
+29 	<div class="panel panel-default">
+30 	  <div class="panel-heading"> NsBm0d </div>
+31	  <div class="panel-body">
+32		This is my YouTube Channel.
+33		It also as other things that do not reference to Cydia.<br /><br />
+34		<a class="btn btn-xs btn-default" href="https://www.youtube.com/user/NsBm0d">More info</a>
+35	  </div>
+36	</div>
+
+
+42 <div class="container">
+43	<div class="panel panel-default">
+44	  <div class="panel-heading">Nicon</div>
+45	  <div class="panel-body">
+46		This is a package with minimal information.
+47		It also is an icon package.<br /><br />
+48		<a class="btn btn-xs btn-default" href="depictions/?p=com.Nrepo.Nicon">More info</a>
+49	  </div>
+50	</div>
+51
+52	<div class="panel panel-default">
+53	  <div class="panel-heading">NsB</div>
+54	  <div class="panel-body">
+55		This is a Theme that is used with Anemone.<br /><br />
+56		<a class="btn btn-xs btn-default" href="depictions/?p=com.Nrepo.NsB">More info</a>
+57	  </div>
+58	</div>
+59 </div>
+60
+
+
 
 #### 5. ALL DONE!
 **And there you have it! Your first package on your repo!**
